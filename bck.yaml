@@ -99,9 +99,9 @@ all:
         storage-1-1:
           iproto:
             listen:
-              - uri: 10.0.2.192:3301           # Заменить на IP VM
+              - uri: 10.15.123.205:3301           # Заменить на IP VM
             advertise:
-              client: 10.0.2.192:3301          # Заменить на IP VM
+              client: 10.15.123.205:3301          # Заменить на IP VM
           roles_cfg:
             roles.metrics-export:
               http:
@@ -112,9 +112,9 @@ all:
         storage-2-2:
           iproto:
             listen:
-              - uri: 10.0.2.192:3302             # Заменить на IP VM
+              - uri: 10.15.123.206:3302             # Заменить на IP VM
             advertise:
-              client: 10.0.2.192:3302            # Заменить на IP VM
+              client: 10.15.123.206:3302            # Заменить на IP VM
           roles_cfg:
             roles.metrics-export:
               http:
@@ -125,9 +125,9 @@ all:
         router-1:
           iproto:
             listen:
-              - uri: 10.0.2.192:3401             # Заменить на IP VM
+              - uri: 10.15.123.205:3401             # Заменить на IP VM
             advertise:
-              client: 10.0.2.192:3401            # Заменить на IP VM
+              client: 10.15.123.205:3401            # Заменить на IP VM
           roles_cfg:
             roles.metrics-export:
               http:
@@ -137,17 +137,17 @@ all:
                       format: prometheus
 
       vars:
-        ansible_host: 10.0.2.192          # Заменить на IP VM
-        ansible_user: astra               # super user на ВМ
+        ansible_host: 10.15.123.205          # Заменить на IP VM
+        ansible_user: i.pochitalkin               # super user на ВМ
 
     tarantooldb_2:                     # Условный хост, на котором расположены инстансы
       hosts:
         storage-3-2:
           iproto:
             listen:
-              - uri: 10.0.2.192:3301           # Заменить на IP VM
+              - uri: 10.15.123.209:3301           # Заменить на IP VM
             advertise:
-              client: 10.0.2.192:3301          # Заменить на IP VM
+              client: 10.15.123.209:3301          # Заменить на IP VM
           roles_cfg:
             roles.metrics-export:
               http:
@@ -158,9 +158,9 @@ all:
         storage-4-1:
           iproto:
             listen:
-              - uri: 10.0.2.192:3302             # Заменить на IP VM
+              - uri: 10.15.123.211:3302             # Заменить на IP VM
             advertise:
-              client: 10.0.2.192:3302            # Заменить на IP VM
+              client: 10.15.123.211:3302            # Заменить на IP VM
           roles_cfg:
             roles.metrics-export:
               http:
@@ -171,9 +171,9 @@ all:
         router-3:
           iproto:
             listen:
-              - uri: 10.0.2.192:3401             # Заменить на IP VM
+              - uri: 10.15.123.209:3401             # Заменить на IP VM
             advertise:
-              client: 10.0.2.192:3401            # Заменить на IP VM
+              client: 10.15.123.209:3401            # Заменить на IP VM
           roles_cfg:
             roles.metrics-export:
               http:
@@ -183,17 +183,17 @@ all:
                       format: prometheus
 
       vars:
-        ansible_host: 10.0.2.192          # Заменить на IP VM
-        ansible_user: astra               # super user на ВМ
+        ansible_host: 10.15.123.205          # Заменить на IP VM
+        ansible_user: i.pochitalkin               # super user на ВМ
 
     tarantooldb_3:                     # Условный хост, на котором расположены инстансы
       hosts:
         storage-1-2:
           iproto:
             listen:
-              - uri: 10.0.2.192:3301           # Заменить на IP VM
+              - uri: 10.15.123.205:3301           # Заменить на IP VM
             advertise:
-              client: 10.0.2.192:3301          # Заменить на IP VM
+              client: 10.15.123.205:3301          # Заменить на IP VM
           roles_cfg:
             roles.metrics-export:
               http:
@@ -204,9 +204,9 @@ all:
         storage-2-1:
           iproto:
             listen:
-              - uri: 10.0.2.192:3302             # Заменить на IP VM
+              - uri: 10.15.123.206:3302             # Заменить на IP VM
             advertise:
-              client: 10.0.2.192:3302            # Заменить на IP VM
+              client: 10.15.123.206:3302            # Заменить на IP VM
           roles_cfg:
             roles.metrics-export:
               http:
@@ -217,9 +217,9 @@ all:
         router-2:
           iproto:
             listen:
-              - uri: 10.0.2.192:3401             # Заменить на IP VM
+              - uri: 10.15.123.206:3401             # Заменить на IP VM
             advertise:
-              client: 10.0.2.192:3401            # Заменить на IP VM
+              client: 10.15.123.206:3401            # Заменить на IP VM
           roles_cfg:
             roles.metrics-export:
               http:
@@ -229,17 +229,17 @@ all:
                       format: prometheus
 
       vars:
-        ansible_host: 10.0.2.192          # Заменить на IP VM
-        ansible_user: astra               # super user на ВМ
+        ansible_host: 10.15.123.206          # Заменить на IP VM
+        ansible_user: i.pochitalkin               # super user на ВМ
 
     tarantooldb_4:                     # Условный хост, на котором расположены инстансы
       hosts:
         storage-3-1:
           iproto:
             listen:
-              - uri: 10.0.2.192:3301           # Заменить на IP VM
+              - uri: 10.15.123.209:3301           # Заменить на IP VM
             advertise:
-              client: 10.0.2.192:3301          # Заменить на IP VM
+              client: 10.15.123.209:3301          # Заменить на IP VM
           roles_cfg:
             roles.metrics-export:
               http:
@@ -250,9 +250,9 @@ all:
         storage-4-2:
           iproto:
             listen:
-              - uri: 10.0.2.192:3302             # Заменить на IP VM
+              - uri: 10.15.123.211:3302             # Заменить на IP VM
             advertise:
-              client: 10.0.2.192:3302            # Заменить на IP VM
+              client: 10.15.123.211:3302            # Заменить на IP VM
           roles_cfg:
             roles.metrics-export:
               http:
@@ -263,9 +263,9 @@ all:
         router-4:
           iproto:
             listen:
-              - uri: 10.0.2.192:3401             # Заменить на IP VM
+              - uri: 10.15.123.211:3401             # Заменить на IP VM
             advertise:
-              client: 10.0.2.192:3401            # Заменить на IP VM
+              client: 10.15.123.211:3401            # Заменить на IP VM
           roles_cfg:
             roles.metrics-export:
               http:
@@ -275,8 +275,8 @@ all:
                       format: prometheus
 
       vars:
-        ansible_host: 10.0.2.192          # Заменить на IP VM
-        ansible_user: astra               # super user на ВМ
+        ansible_host: 10.15.123.211          # Заменить на IP VM
+        ansible_user: i.pochitalkin               # super user на ВМ
 
   vars:
     ansible_ssh_common_args: -o IdentitiesOnly=yes -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
